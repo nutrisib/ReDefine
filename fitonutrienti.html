@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infografic: Fitonutrienții - Curcubeul din Farfurie</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f9fa; 
+            color: #212529;
+        }
+        .chart-container {
+            position: relative;
+            height: 350px;
+            width: 100%;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        @media (max-width: 768px) {
+            .chart-container {
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="bg-white">
+        <main class="container mx-auto p-4 md:p-8 max-w-7xl">
+            <header class="text-center mb-16">
+                <h1 class="text-4xl md:text-5xl font-bold text-[#0A2463] mb-4">Fitonutrienții: curcubeul din farfurie</h1>
+                <p class="text-lg text-slate-600 max-w-3xl mx-auto">Acești compuși puternici din plante îți oferă protecție și optimizează sănătatea. Descoperă chimia vibrantă a naturii!</p>
+                <nav class="mt-8">
+                    <a href="index.html" class="inline-block bg-[#3E92CC] text-white px-6 py-2 rounded-lg font-semibold hover:bg-[#0A2463] transition duration-300 shadow-md">← Înapoi la meniu</a>
+                </nav>
+            </header>
+
+            <section class="mb-16">
+                <h2 class="text-3xl font-bold text-center text-[#0A2463] mb-8">Ce sunt fitonutrienții?</h2>
+                <p class="text-center text-slate-600 mb-8 max-w-4xl mx-auto">Fitonutrienții (sau fitochimicale) sunt compuși naturali produși de plante pentru propria lor protecție. Când îi consumăm, beneficiem și noi de proprietățile lor. Nu sunt esențiali pentru supraviețuire ca vitaminele, dar sunt cruciali pentru prevenirea bolilor cronice.</p>
+                <div class="bg-white rounded-2xl shadow-lg p-6 flex flex-col items-center justify-center text-center">
+                    <span class="text-5xl text-[#06D6A0] mb-3">🌱</span>
+                    <h3 class="text-xl font-bold text-[#0A2463]">Peste 25.000 de fitonutrienți cunoscuți!</h3>
+                    <p class="text-slate-600 mt-2">Fiecare cu proprietăți unice, responsabili pentru culorile, aromele și gusturile diverse ale plantelor.</p>
+                </div>
+            </section>
+
+            <section class="mb-16">
+                <h2 class="text-3xl font-bold text-center text-[#0A2463] mb-8">Rolurile cheie ale fitonutrienților în sănătate</h2>
+                <p class="text-center text-slate-600 mb-8 max-w-4xl mx-auto">Acești compuși lucrează sinergic, oferind beneficii multiple care ne protejează corpul la nivel celular.</p>
+                <div class="bg-white rounded-2xl shadow-lg p-6">
+                    <div class="chart-container md:max-w-xl">
+                        <canvas id="phytonutrientBenefitsDonut"></canvas>
+                    </div>
+                    <p class="text-center text-sm text-slate-500 mt-4">Proporțiile sunt ilustrative, evidențiind ariile majore de acțiune.</p>
+                </div>
+            </section>
+
+            <section class="mb-16">
+                <h2 class="text-3xl font-bold text-center text-[#0A2463] mb-8">Curcubeul din farfurie: culori, fitonutrienți și beneficii</h2>
+                <p class="text-center text-slate-600 mb-8 max-w-4xl mx-auto">Consumul unei varietăți de culori asigură un spectru larg de fitonutrienți, fiecare cu puteri unice.</p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Roșu -->
+                    <div class="bg-red-50 rounded-2xl shadow-lg p-6 border-l-4 border-[#D8315B]">
+                        <h3 class="text-2xl font-bold text-[#D8315B] mb-3">Roșu</h3>
+                        <p class="font-semibold mb-2">Fitonutrienți cheie:</p>
+                        <ul class="list-disc list-inside text-slate-600">
+                            <li>Licopen, antocianine</li>
+                        </ul>
+                        <p class="font-semibold mt-4 mb-2">Beneficii:</p>
+                        <ul class="list-disc list-inside text-slate-600">
+                            <li>Sănătate cardiovasculară</li>
+                            <li>Antioxidant puternic</li>
+                            <li>Reducerea riscului de cancer (prostată)</li>
+                        </ul>
+                        <p class="font-semibold mt-4 mb-2">Alimente:</p>
+                        <ul class="list-disc list-inside text-slate-600">
+                            <li>Roșii, pepene roșu, căpșuni, cireșe, sfeclă roșie</li>
+                        </ul>
+                    </div>
+                    <!-- Portocaliu & Galben -->
+                    <div class="bg-yellow-50 rounded-2xl shadow-lg p-6 border-l-4 border-[#F4C150]">
+                        <h3 class="text-2xl font-bold text-[#F4C150] mb-3">Portocaliu & Galben</h3>
+                        <p class="font-semibold mb-2">Fitonutrienți cheie:</p>
+                        <ul class="list-disc list-inside text-slate-600">
+                            <li>Beta-caroten, luteină, zeaxantină</li>
+                        </ul>
+                        <p class="font-semibold mt-4 mb-2">Beneficii:</p>
+                        <ul class="list-disc list-inside text-slate-600">
+                            <li>Imunitate, sănătatea ochilor</li>
+                            <li>Acțiune antioxidantă</li>
+                        </ul>
+                        <p class="font-semibold mt-4 mb-2">Alimente:</p>
+                        <ul class="list-disc list-inside text-slate-600">
+                            <li>Morcovi, cartofi dulci, portocale, dovleac, porumb</li>
+                        </ul>
+                    </div>
+                    <!-- Verde -->
+                    <div class="bg-green-50 rounded-2xl shadow-lg p-6 border-l-4 border-[#06D6A0]">
+                        <h3 class="text-2xl font-bold text-[#06D6A0] mb-3">Verde</h3>
+                        <p class="font-semibold mb-2">Fitonutrienți cheie:</p>
+                        <ul class="list-disc list-inside text-slate-600">
+                            <li>Clorofilă, izotiocianați (sulforafan)</li>
+                        </ul>
+                        <p class="font-semibold mt-4 mb-2">Beneficii:</p>
+                        <ul class="list-disc list-inside text-slate-600">
+                            <li>Detoxifiere, sănătate celulară</li>
+                            <li>Proprietăți anticancerigene</li>
+                        </ul>
+                        <p class="font-semibold mt-4 mb-2">Alimente:</p>
+                        <ul class="list-disc list-inside text-slate-600">
+                            <li>Spanac, kale, broccoli, avocado, ceai verde</li>
+                        </ul>
+                    </div>
+                    <!-- Alb & Maro/Bej -->
+                    <div class="bg-gray-50 rounded-2xl shadow-lg p-6 border-l-4 border-slate-400 lg:col-span-1">
+                        <h3 class="text-2xl font-bold text-slate-700 mb-3">Alb & Maro/Bej</h3>
+                        <p class="font-semibold mb-2">Fitonutrienți cheie:</p>
+                        <ul class="list-disc list-inside text-slate-600">
+                            <li>Alicină, inuline, sulforafan</li>
+                        </ul>
+                        <p class="font-semibold mt-4 mb-2">Beneficii:</p>
+                        <ul class="list-disc list-inside text-slate-600">
+                            <li>Imunitate, protecție celulară</li>
+                            <li>Proprietăți antibacteriene/virale</li>
+                        </ul>
+                        <p class="font-semibold mt-4 mb-2">Alimente:</p>
+                        <ul class="list-disc list-inside text-slate-600">
+                            <li>Usturoi, ceapă, ciuperci, conopidă, pere</li>
+                        </ul>
+                    </div>
+                    <!-- Albastru & Violet -->
+                    <div class="bg-blue-50 rounded-2xl shadow-lg p-6 border-l-4 border-[#3E92CC] lg:col-span-2">
+                        <h3 class="text-2xl font-bold text-[#3E92CC] mb-3">Albastru & Violet</h3>
+                        <p class="font-semibold mb-2">Fitonutrienți cheie:</p>
+                        <ul class="list-disc list-inside text-slate-600">
+                            <li>Antocianine, resveratrol</li>
+                        </ul>
+                        <p class="font-semibold mt-4 mb-2">Beneficii:</p>
+                        <ul class="list-disc list-inside text-slate-600">
+                            <li>Antioxidanți puternici, sănătate cerebrală</li>
+                            <li>Sănătate cardiovasculară, anti-îmbătrânire</li>
+                        </ul>
+                        <p class="font-semibold mt-4 mb-2">Alimente:</p>
+                        <ul class="list-disc list-inside text-slate-600">
+                            <li>Afine, mure, struguri violet, vinete, varză roșie</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="mb-16">
+                <h2 class="text-3xl font-bold text-center text-[#0A2463] mb-8">Strategii pentru maximizarea beneficiilor fitonutrienților</h2>
+                <p class="text-center text-slate-600 mb-8 max-w-4xl mx-auto">Modul în care pregătim și combinăm alimentele influențează semnificativ cât de bine îi absoarbe și utilizează corpul.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-white rounded-2xl shadow-lg p-6 border-l-4 border-[#06D6A0]">
+                        <h3 class="text-2xl font-bold text-[#06D6A0] mb-3">Gătire inteligentă</h3>
+                        <p class="text-slate-700 mb-4">Anumiți fitonutrienți devin mai biodisponibili prin gătire (licopen din roșii, beta-caroten din morcovi), în timp ce alții sunt sensibili la căldură și necesită consum crud (vitamina C). O combinație de alimente crude și gătite este ideală.</p>
+                    </div>
+                    <div class="bg-white rounded-2xl shadow-lg p-6 border-l-4 border-[#3E92CC]">
+                        <h3 class="text-2xl font-bold text-[#3E92CC] mb-3">Asociere cu grăsimi sănătoase</h3>
+                        <p class="text-slate-700 mb-4">Mulți carotenoizi și vitamine liposolubile au nevoie de grăsimi pentru absorbție optimă. Adaugă ulei de măsline, avocado sau nuci în salate.</p>
+                    </div>
+                    <div class="bg-white rounded-2xl shadow-lg p-6 border-l-4 border-[#F4C150]">
+                        <h3 class="text-2xl font-bold text-[#F4C150] mb-3">Combinații sinergice</h3>
+                        <p class="text-slate-700 mb-4">Fitonutrienții lucrează adesea mai bine împreună. Consumă un mix variat de fructe și legume. De exemplu, vitamina C îmbunătățește absorbția fierului non-heme din legume.</p>
+                    </div>
+                    <div class="bg-white rounded-2xl shadow-lg p-6 border-l-4 border-[#D8315B]">
+                        <h3 class="text-2xl font-bold text-[#D8315B] mb-3">Includerea cojilor și semințelor</h3>
+                        <p class="text-slate-700 mb-4">Multe fitonutrienți se găsesc în concentrații mari în coaja sau chiar în semințele fructelor și legumelor (ex: coaja merelor, pielița strugurilor). Consumul lor integral, atunci când este posibil, este benefic.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section>
+                <h2 class="text-3xl font-bold text-center text-[#0A2463] mb-8">Concluzie: mănâncă curcubeul!</h2>
+                <div class="bg-[#0A2463] text-white rounded-2xl shadow-lg p-8 text-center max-w-4xl mx-auto">
+                    <p class="text-xl">Integrarea unei game largi de fructe și legume colorate în dieta ta este una dintre cele mai simple și puternice strategii pentru a maximiza aportul de fitonutrienți. Mănâncă un "curcubeu" în fiecare zi pentru o sănătate robustă și o vitalitate sporită!</p>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <script>
+        const colorPalette = {
+            darkBlue: '#0A2463',
+            mediumBlue: '#3E92CC',
+            crimson: '#D8315B',
+            yellow: '#F4C150',
+            green: '#06D6A0'
+        };
+
+        const tooltipConfig = {
+            plugins: {
+                tooltip: {
+                    callbacks: {
+                        title: function(tooltipItems) {
+                            const item = tooltipItems[0];
+                            let label = item.chart.data.labels[item.dataIndex];
+                            if (Array.isArray(label)) {
+                                return label.join(' ');
+                            } else {
+                                return label;
+                            }
+                        }
+                    }
+                },
+                legend: {
+                    position: 'top',
+                    labels: {
+                        font: {
+                           family: 'Inter',
+                           size: 14
+                        },
+                        color: '#212529'
+                    }
+                }
+            }
+        };
+        
+        function wrapLabel(label, maxLength = 16) {
+            if (label.length <= maxLength) return label;
+            const words = label.split(' ');
+            const lines = [];
+            let currentLine = '';
+            words.forEach(word => {
+                if ((currentLine + ' ' + word).length > maxLength && currentLine.length > 0) {
+                    lines.push(currentLine.trim());
+                    currentLine = word;
+                } else {
+                    currentLine += (currentLine === '' ? '' : ' ') + word;
+                }
+            });
+            lines.push(currentLine.trim());
+            return lines;
+        }
+
+        function initPhytonutrientBenefitsDonut() {
+            const ctx = document.getElementById('phytonutrientBenefitsDonut').getContext('2d');
+            const data = {
+                labels: ['Antioxidant', 'Antiinflamator', 'Stimulare Imunitate', 'Detoxifiere', 'Sănătate Celulară'],
+                datasets: [{
+                    data: [30, 25, 20, 15, 10], 
+                    backgroundColor: [
+                        colorPalette.mediumBlue,
+                        colorPalette.crimson,
+                        colorPalette.green,
+                        colorPalette.yellow,
+                        colorPalette.darkBlue
+                    ],
+                    hoverOffset: 4
+                }]
+            };
+            new Chart(ctx, {
+                type: 'doughnut',
+                data: data,
+                options: { ...tooltipConfig,
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    cutout: '70%',
+                    plugins: {
+                        legend: {
+                            position: 'bottom',
+                            labels: {
+                                boxWidth: 20
+                            }
+                        }
+                    }
+                }
+            });
+        }
+        
+        window.addEventListener('load', () => {
+            initPhytonutrientBenefitsDonut();
+        });
+    </script>
+</body>
+</html>
