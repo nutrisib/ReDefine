@@ -40,7 +40,7 @@
             <h1 class="text-4xl md:text-5xl font-bold text-[#073B4C] mb-4">Ghidul complet al proteinelor</h1>
             <p class="text-lg text-slate-600 max-w-3xl mx-auto">Proteinele sunt "blocurile de construcție" esențiale ale corpului. Descoperă de ce sunt cruciale, de unde le obții și cum să le integrezi corect în dieta ta.</p>
             <nav class="mt-8">
-                <a href="index.html" class="inline-block bg-[#118AB2] text-white px-6 py-2 rounded-lg font-semibold hover:bg-[#073B4C] transition duration-300 shadow-md">← Înapoi la Meniu</a>
+                <a href="index.html" class="inline-block bg-[#118AB2] text-white px-6 py-2 rounded-lg font-semibold hover:bg-[#073B4C] transition duration-300 shadow-md">← Înapoi la meniu</a>
             </nav>
         </header>
 
@@ -91,7 +91,7 @@
             </div>
 
             <div class="md:col-span-1 bg-white rounded-2xl shadow-lg p-6">
-                <h2 class="text-2xl font-bold text-center text-[#118AB2] mb-2">Completitudine Proteine Vegetale</h2>
+                <h2 class="text-2xl font-bold text-center text-[#118AB2] mb-2">Completitudine proteine vegetale</h2>
                 <p class="text-center text-slate-600 mb-6">Din sursele vegetale analizate, o parte sunt "complete", conținând toți aminoacizii esențiali.</p>
                 <div class="chart-container h-64 md:h-80">
                     <canvas id="completenessDonut"></canvas>
@@ -114,10 +114,10 @@
             </div>
             
             <div class="lg:col-span-3 bg-white rounded-2xl shadow-lg p-6">
-                <h2 class="text-2xl font-bold text-center text-[#118AB2] mb-6">Extremele: Deficit vs. Exces de Proteine</h2>
+                <h2 class="text-2xl font-bold text-center text-[#118AB2] mb-6">Extremele: Deficit vs. Exces de proteine</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                     <div>
-                        <h3 class="text-xl font-semibold text-center text-red-500 mb-4">Efectele Deficitului 🔻</h3>
+                        <h3 class="text-xl font-semibold text-center text-red-500 mb-4">Efectele deficitului 🔻</h3>
                         <ul class="space-y-3">
                             <li class="flex items-center"><span class="text-2xl mr-3">📉</span> Pierderea masei musculare</li>
                             <li class="flex items-center"><span class="text-2xl mr-3">🤕</span> Imunitate slăbită și vindecare lentă</li>
@@ -127,7 +127,7 @@
                         </ul>
                     </div>
                     <div>
-                        <h3 class="text-xl font-semibold text-center text-amber-500 mb-4">Efectele Excesului 🔺</h3>
+                        <h3 class="text-xl font-semibold text-center text-amber-500 mb-4">Efectele excesului 🔺</h3>
                          <ul class="space-y-3">
                             <li class="flex items-center"><span class="text-2xl mr-3">🫘</span> Stres asupra rinichilor</li>
                             <li class="flex items-center"><span class="text-2xl mr-3">🦴</span> Risc de gută și pierderi de calciu</li>
@@ -139,7 +139,13 @@
                 </div>
             </div>
             
-             <div class="lg:col-span-3 bg-white rounded-2xl shadow-lg p-6">
+            <div class="lg:col-span-3 bg-white rounded-2xl shadow-lg p-6 text-center">
+                <h2 class="text-2xl font-bold text-[#118AB2] mb-2">Tabel detaliat cu surse proteice</h2>
+                <p class="text-slate-600 mb-6">Pentru o analiză amănunțită a conținutului de proteine, calorii și statutului aminoacizilor esențiali pentru diverse alimente vegetale și animale, accesați tabelul nostru complet.</p>
+                <a href="tabel_proteine.html" class="inline-block bg-[#06D6A0] text-white px-8 py-3 rounded-lg font-semibold hover:bg-[#073B4C] transition duration-300 shadow-md text-lg">Vezi tabelul complet cu proteine &raquo;</a>
+            </div>
+
+            <div class="lg:col-span-3 bg-white rounded-2xl shadow-lg p-6">
                 <h2 class="text-2xl font-bold text-center text-[#118AB2] mb-2">Top Surse Proteice Vegetale</h2>
                 <p class="text-center text-slate-600 mb-6">Aceste surse vegetale sunt campioane la conținutul de proteine (grame per 100g produs).</p>
                 <div class="chart-container">
@@ -230,7 +236,7 @@
         function initProteinCompareChart() {
             const ctx = document.getElementById('proteinCompareChart').getContext('2d');
             const data = {
-                labels: ['Piept de Pui', wrapLabel('Semințe de Cânepă'), 'Soia Texturată', 'Carne de Vită', 'Ton', 'Linte'],
+                labels: ['Piept de Pui', wrapLabel('Semințe de cânepă'), 'Soia texturată', 'carne de Vită', 'ton', 'linte'],
                 datasets: [{
                     label: 'g Proteine / 100g',
                     data: [31, 31.5, 22.5, 28, 26.5, 9.5],
@@ -266,9 +272,9 @@
         function initCompletenessDonut() {
             const ctx = document.getElementById('completenessDonut').getContext('2d');
             const data = {
-                labels: ['Proteine Vegetale Complete', 'Proteine Vegetale Incomplete'],
+                labels: ['proteine vegetale complete', 'Proteine vegetale incomplete'],
                 datasets: [{
-                    label: 'Număr de Surse',
+                    label: 'Număr de surse',
                     data: [10, 21],
                     backgroundColor: [
                         colorPalette.green,
@@ -289,7 +295,7 @@
 
         function initTopVeggieChart() {
             const ctx = document.getElementById('topVeggieChart').getContext('2d');
-            const rawLabels = ['Spirulina (uscată)', 'Semințe de Cânepă Decorticate', 'Semințe de Dovleac', 'Unt de arahide', 'Arahide', 'Drojdie de bere inactivă', 'Semințe de Floarea Soarelui', 'Unt de migdale'];
+            const rawLabels = ['Spirulina (uscată)', 'Semințe de cânepă decorticate', 'Semințe de dovleac', 'Unt de arahide', 'Arahide', 'Drojdie de bere inactivă', 'Semințe de floarea Soarelui', 'Unt de migdale'];
             const data = {
                 labels: rawLabels.map(label => wrapLabel(label)),
                 datasets: [{
@@ -311,7 +317,7 @@
                     scales: {
                         x: {
                             beginAtZero: true,
-                            title: { display: true, text: 'Grame de Proteine' }
+                            title: { display: true, text: 'Grame de proteine' }
                         }
                     }
                 }
