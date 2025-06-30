@@ -60,6 +60,14 @@
         .bg-custom-blue {
             background-color: #3E92CC;
         }
+        .footer-copyright {
+            text-align: center;
+            padding: 20px 0;
+            font-size: 0.85em;
+            color: #6c757d;
+            border-top: 1px solid #e0e0e0;
+            margin-top: 20px;
+        }
     </style>
 </head>
 <body>
@@ -69,9 +77,6 @@
             <header class="text-center mb-16">
                 <h1 class="text-4xl md:text-5xl font-bold text-[#0A2463] mb-4">Enzimele: catalizatorii vieții și cheia unei digestii optime</h1>
                 <p class="text-lg text-slate-600 max-w-3xl mx-auto">Muncitori minusculi, dar esențiali: descoperă rolul crucial al enzimelor în digestie, producția de energie și sănătatea generală.</p>
-                <nav class="mt-8">
-                    <a href="index.html" class="inline-block bg-[#3E92CC] text-white px-6 py-2 rounded-lg font-semibold hover:bg-[#0A2463] transition duration-300 shadow-md">← Înapoi la meniu</a>
-                </nav>
             </header>
 
             <section class="mb-16">
@@ -204,7 +209,9 @@
                     <p class="text-xl">Enzimele sunt pilonul invizibil al sănătății tale. O digestie optimă, susținută de o dietă bogată în alimente integrale și, la nevoie, de suplimente inteligente, este cheia unei absorbții eficiente a nutrienților și a unei stări generale de vitalitate. Ai grijă de enzimele tale și ele vor avea grijă de tine!</p>
                 </div>
             </section>
-
+            <div class="footer-copyright">
+                <p>Copyright: dr.ing. Radu Pascu - 2025</p>
+            </div>
         </main>
     </div>
 
